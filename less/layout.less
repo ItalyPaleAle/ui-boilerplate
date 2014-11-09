@@ -1,0 +1,119 @@
+html {
+	height: 100%;
+}
+
+body {
+	color: #777;
+}
+
+.pure-img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+/* For full page */
+body {
+	&.fullpage {
+		height: 100%;
+		
+		/* Uncomment for adding a background image */
+		/*background: url('/images/bg-fullpage.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;*/
+		
+		#layout, #main, .login-container {
+			height: 100%;
+		}
+	}
+}
+
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+
+Some nice fonts:
+- Source Sans Pro: http://sourceforge.net/adobe/sourcesans/
+- Open Sans: https://www.google.com/fonts/specimen/Open+Sans
+- Lato: http://www.latofonts.com
+
+As long as we target only IE10+, every font should work: http://blog.purecss.io/post/60789414532/how-we-improved-grids-in-pure-0-3-0
+
+WOFF: Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+
+TTF: Chrome 4+, Firefox 3.5, Opera 10+, Safari 3-5
+*/
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  /*font-weight: 300;*/
+  font-weight: normal;
+  src: local('Source Sans Pro Light'),
+	   local('SourceSansPro-Light'),
+	   url('/fonts/SourceSansPro-Light.woff') format('woff'),
+	   url('/fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+/*@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'),
+	   local('SourceSansPro-Regular'),
+	   url('/fonts/SourceSansPro-Regular.woff') format('woff'),
+	   url('/fonts/SourceSansPro-Regular.ttf') format('truetype');
+}*/
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  /*font-weight: 600;*/
+  font-weight: bold;
+  src: local('Source Sans Pro Semibold'),
+	   local('SourceSansPro-Semibold'),
+	   url('/fonts/SourceSansPro-Semibold.woff') format('woff'),
+	   url('/fonts/SourceSansPro-Semibold.ttf') format('truetype');
+}
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*
+The content `<div>` is where all your content goes.
+*/
+.content {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: 800px;
+	margin-bottom: 50px;
+	line-height: 1.6em;
+}
+
+.header {
+	 margin: 0;
+	 color: #333;
+	 text-align: center;
+	 padding: 2.5em 2em 0;
+	 border-bottom: 1px solid #eee;
+	 
+	 h1 {
+		 margin: 0.2em 0;
+		font-size: 3em;
+		font-weight: 300;
+	 }
+	 
+	 h2 {
+		 font-weight: 300;
+		color: #ccc;
+		padding: 0;
+		margin-top: 0;
+	 }
+ }
+
+.content-subhead {
+	margin: 50px 0 20px 0;
+	font-weight: 300;
+	color: #888;
+}

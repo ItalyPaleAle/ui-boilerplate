@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>UI Boilerplate</title>
+  
+  <!-- Pure CSS -->
+  <link href="/bower_components/pure/base-min.css" rel="stylesheet" />
+  <link href="/bower_components/pure/buttons-min.css" rel="stylesheet" />
+  <link href="/bower_components/pure/forms-min.css" rel="stylesheet" />
+  <link href="/bower_components/pure/grids-min.css" rel="stylesheet" />
+  <link href="/bower_components/pure/grids-responsive-min.css" rel="stylesheet" />
+  <link href="/bower_components/pure/menus-min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome -->
+  <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link href="/css/layout.css" rel="stylesheet" />
+  <link href="/css/side-menu.css" rel="stylesheet" />
+  <link href="/css/login.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="layout">
+    <!-- Hamburger menu -->
+    <a class="menu-link" href="#" id="menuLink">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <div id="menu">
+      <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading" href="#">UI</a>
+
+        <ul>
+          <li>
+            <a href="#/test1"><i class="fa fa-circle-o"></i></a>
+          </li>
+
+          <li>
+            <a href="#/test2"><i class="fa fa-th"></i></a>
+          </li>
+
+          <li class="pure-menu-selected">
+            <a href="#/test3"><i class="fa fa-leaf"></i></a>
+          </li>
+
+          <li>
+            <a href="#/cloud"><i class="fa fa-cloud"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="main"></div>
+  </div>
+
+<!-- HTML views -->
+
+<!-- view/home -->
+<script type="text/rosso-view" id="view/home">
+      <div class="header">
+        <h1>Page Title</h1>
+
+        <h2>A subtitle for your page goes here</h2>
+      </div>
+
+      <div class="content">
+        <h2 class="content-subhead">How to use this layout</h2>
+
+        <p>To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.</p>
+
+        <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="pure-g">
+          <div class="pure-u-1-4"><img alt="Peyto Lake" class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg"></div>
+
+          <div class="pure-u-1-4"><img alt="Train" class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg"></div>
+
+          <div class="pure-u-1-4"><img alt="T-Shirt Store" class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg"></div>
+
+          <div class="pure-u-1-4"><img alt="Mountain" class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg"></div>
+        </div>
+
+        <h2 class="content-subhead">Try Resizing your Browser</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+</script>
+
+<!-- view/login (full page) -->
+<script type="text/rosso-view" id="view/login">
+  <div class="login-container">
+    <div class="login-box">
+	  <div class="pure-g">
+	    <div class="pure-u-1 pure-u-sm-1-3">
+		  <h1>UI Boilerplate</h1>
+		</div>
+	    <div class="pure-u-1 pure-u-sm-2-3">
+		  <form id="login-form" class="pure-form pure-form-stacked">
+		    <fieldset>
+		      <input type="text" name="email" placeholder="Email" />
+		      <input type="password" name="password" placeholder="Password" />
+		      <button type="submit">Login</button>
+		    </fieldset>
+	      </form>
+	    </div>
+	  </div>
+    </div>
+  </div>
+</script>
+
+<!-- view/404 (full page) -->
+<script type="text/rosso-view" id="view/404">
+  <h1>404 not found</h1>
+</script>
+
+<!-- Load JS scripts -->
+<!-- jQuery is not bundled so in production it can be included from an external CDN to use cache more efficiently -->
+<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+
+</body>
+</html>

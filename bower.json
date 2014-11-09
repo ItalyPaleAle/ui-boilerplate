@@ -1,0 +1,23 @@
+{
+  "name": "ui-boilerplate",
+  "version": "0.1.0",
+  "author": "Alessandro Segala",
+  "homepage": "https://github.com/EgoAleSum/ui-boilerplate",
+  "description": "Boilerplate for UI",
+  "license": "BSD-2-Clause",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.x",
+    "pure": "0.5.x",
+    "font-awesome": "FortAwesome/Font-Awesome#4.x",
+    "rosso": "0.2.x",
+    "elements": "kontur/elements"
+  }
+}

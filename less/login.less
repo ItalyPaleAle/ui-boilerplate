@@ -1,0 +1,34 @@
+/*
+Mixins
+*/
+@import "../bower_components/elements/elements.less";
+
+/* Uses flexbox, requires IE10+ */
+.login-container {
+	display: -webkit-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	
+	.login-box {
+		width: 400px;
+		padding: 10px;
+		margin: 0 auto;
+		/*background: rgba(255, 255, 255, .5);*/
+		
+		input[type="text"], input[type="password"], button {
+			width: 100%;
+			border: 1px solid #2871a9;
+			background: rgba(255, 255, 255, .4);
+		}
+		
+		button {
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+	}
+}

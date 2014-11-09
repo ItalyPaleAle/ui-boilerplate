@@ -1,0 +1,25 @@
+{
+  "name": "ui-boilerplate",
+  "version": "0.1.0",
+  "description": "Boilerplate for UI",
+  "devDependencies": {
+    "grunt": "*",
+    "debowerify": "*",
+    "grunt-browserify": "*",
+    "grunt-pure-grids": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-clean": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EgoAleSum/ui-boilerplate.git"
+  },
+  "author": "Alessandro Segala",
+  "description": "Boilerplate for UI",
+  "license": "BSD-2-Clause",
+  "homepage": "https://github.com/EgoAleSum/ui-boilerplate",
+  "private": false
+}
